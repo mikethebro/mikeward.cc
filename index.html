@@ -10,20 +10,73 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- my css code - comes after to override normalize.css -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/4110246683.js"></script>
   </head>
   <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+     <script>
+        $(document).ready(function (){
+            $(".nav_top").click(function (){
+                $('html, body').animate({
+                    scrollTop: $(".top").offset().top
+                }, 1000);
+            });
+        });
+        $(document).ready(function (){
+            $(".nav_experience").click(function (){
+                $('html, body').animate({
+                    scrollTop: $(".experience").offset().top
+                }, 1000);
+            });
+        });
+        $(document).ready(function (){
+            $(".nav_education").click(function (){
+                $('html, body').animate({
+                    scrollTop: $(".education").offset().top
+                }, 1000);
+            });
+        });
+        $(document).ready(function (){
+            $(".nav_skills").click(function (){
+                $('html, body').animate({
+                    scrollTop: $(".skills").offset().top
+                }, 1000);
+            });
+        });
+        $(document).ready(function (){
+            $(".nav_awards").click(function (){
+                $('html, body').animate({
+                    scrollTop: $(".awards").offset().top
+                }, 1000);
+            });
+        });
+    </script>
     <header>
-        <ul class="nav">
-          <li class="nav"><a href="#">About</a></li>
-          <li class="nav"><a href="#">Experience</a></li>
-          <li class="nav"><a href="#">Education</a></li>
-          <li class="nav"><a href="#">Awards</a></li>
-        </ul>
+      <a class="nav_top">Mike Ward</a>
+      <ul class="nav">
+        <li class="nav"><a class="nav_experience">Experience</a></li>
+        <li class="nav"><a class="nav_education">Education</a></li>
+        <li class="nav"><a class="nav_skills">Skills</a></li>
+        <li class="nav"><a class="nav_awards">Awards</a></li>
+      </ul>
     </header>
     <div class="main">
-      <div class="img1">
+      <div class="top">
+        <div class="top-text">
+          <img class="profile" src="img/profile.jpg"/>
+          <a class="github" href="https://github.com/mikethebro" target="_blank">GitHub</a>
+          <a class="resume" href="./Mike_Ward_Resume.pdf" target="_blank">Resume</a>
+        </div>
+        <i class="fa fa-arrow-down nav_experience" aria-hidden="true"></i>
       </div>
-      <div class="img2">
+      <div class="experience">
+      </div>
+      <div class="education">
+      </div>
+      <div class="skills">
+      </div>
+      <div class="awards">
       </div>
     </div>
     <footer>
