@@ -1,0 +1,56 @@
+<img id="teahouse" src="img/00.jpg">
+
+<script>
+    var date = new Date();
+    var hours = date.getHours();
+    switch(hours) {
+        case 23:
+        case 22:
+            document.getElementById("teahouse").src = "img/22.jpg";
+            break;
+        case 21:
+        case 20:
+            document.getElementById("teahouse").src = "img/20.jpg";
+            break;
+        case 19:
+        case 18:
+            document.getElementById("teahouse").src = "img/18.jpg";
+            break;
+        case 17:
+        case 16:
+            document.getElementById("teahouse").src = "img/16.jpg";
+            break;
+        case 15:
+        case 14:
+            document.getElementById("teahouse").src = "img/14.jpg";
+            break;
+        case 13:
+        case 12:
+            document.getElementById("teahouse").src = "img/12.jpg";
+            break;
+        case 11:
+        case 10:
+            document.getElementById("teahouse").src = "img/10.jpg";
+            break;
+        case 9:
+        case 8:
+            document.getElementById("teahouse").src = "img/08.jpg";
+            break;
+        case 7:
+        case 6:
+            document.getElementById("teahouse").src = "img/06.jpg";
+            break;
+        case 5:
+        case 4:
+            document.getElementById("teahouse").src = "img/04.jpg";
+            break;
+        case 3:
+            if (date.getMinutes() == 14) {
+                document.getElementById("teahouse").src = "img/0314.jpg";
+                break;
+            }
+        case 2:
+            document.getElementById("teahouse").src = "img/02.jpg";
+            break;
+    }
+</script>
